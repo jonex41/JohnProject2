@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/image"
+        android:src="@drawable/ic_launcher_background" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:textColor="@android:color/white"
+    android:text="School Map made easy"/>
+    <TextView
+
+        android:id="@+id/ee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+       android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:padding="5dp"
+        android:text="Abu Map"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+
+
+
+</RelativeLayout>

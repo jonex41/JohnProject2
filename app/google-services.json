@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "105351084973",
+    "firebase_url": "https://degreeprojectschool.firebaseio.com",
+    "project_id": "degreeprojectschool",
+    "storage_bucket": "degreeprojectschool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105351084973:android:fc3f741f285353f52abf24",
+        "android_client_info": {
+          "package_name": "com.example.johnproject2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105351084973-3gsbiurufm7cjcj82jd7sqfbggb1okol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSEiNw74xCE-GpvfoAz8bXgPFr9XluJfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105351084973-3gsbiurufm7cjcj82jd7sqfbggb1okol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

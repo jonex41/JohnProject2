@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar"
+        app:title="Map"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        android:background="@color/colorPrimary"/>
+    <fragment
+
+        android:layout_below="@id/constraint"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/constraint">
+
+
+        <jrizani.jrspinner.JRSpinner
+            android:id="@+id/spn_my_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Choose Location"
+            android:textColor="@color/colorPrimary"
+            app:backgroundTint="@color/colorPrimary"
+            app:jrs_icon_tint="@color/colorPrimary"
+
+            app:jrs_title="Choose"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/curve_stuff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgCurrentloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constraint"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:background="#9FFFFFFF"
+        android:padding="8dp"
+        android:src="@drawable/ic_my_location_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+       />
+
+
+    <ImageView
+        android:id="@+id/direction_tool"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="18dp"
+        android:background="#9FFFFFFF"
+        android:padding="8dp"
+        android:src="@drawable/ic_directions_blue_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="102dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/google_maps_tool"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignStart="@+id/direction_tool"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="18dp"
+        android:background="#9FFFFFFF"
+        android:src="@drawable/ic_google_maps"
+        android:padding="8dp"
+        android:layout_alignLeft="@+id/direction_tool"
+        android:layout_marginLeft="40dp"
+        android:contentDescription="google_map" />
+
+
+
+</RelativeLayout>
+

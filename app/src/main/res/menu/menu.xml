@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Log out"
+        android:id="@+id/logout"/>
+
+    <item android:title="Send Location"
+        android:id="@+id/sendlocation"/>
+    <item android:title="Recieved Location"
+        android:id="@+id/recievedlocation"/>
+    <item android:title="Broadcast Location"
+        android:id="@+id/broadcastloacation"/>
+
+
+</menu>
